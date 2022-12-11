@@ -1,0 +1,31 @@
+.full {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.half {
+  width: 47%;
+}
+.group {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.alert {
+  height: 30px;
+}
+
+.btn {
+  padding: 0.4rem 0 0.3rem 0;
+}
+
+.btn__content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn__content span {
+  padding-right: 0.5rem;
+}
