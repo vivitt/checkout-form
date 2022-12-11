@@ -66,17 +66,17 @@ const PaymentCard: React.FC<IProps> = ({
 
   return (
     <Card align="center" variant="elevated" bg="white" maxW="sm">
+      <div className={styles.alert}>
+        {error !== "" ? (
+          <Alert status="error">
+            <AlertIcon />
+            {error}
+          </Alert>
+        ) : (
+          <></>
+        )}
+      </div>
       <CardHeader>
-        <div className={styles.alert}>
-          {error !== "" ? (
-            <Alert status="error">
-              <AlertIcon />
-              {error}
-            </Alert>
-          ) : (
-            <></>
-          )}
-        </div>
         <Image
           src="/logo.png"
           alt="Happy face with a red hat and blue glasses"
