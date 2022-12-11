@@ -113,7 +113,6 @@ const PaymentCard: React.FC<IProps> = ({
                 }}
               />
               <InputRightElement>
-                {" "}
                 <Icon as={TfiCreditCard} color="#9BADB7" />
               </InputRightElement>
             </InputGroup>
@@ -145,7 +144,7 @@ const PaymentCard: React.FC<IProps> = ({
                   }}
                 />
                 <InputRightElement>
-                  <Icon as={AiFillInfoCircle} color="#9BADB7" />/
+                  <Icon as={AiFillInfoCircle} color="#9BADB7" />
                 </InputRightElement>
               </InputGroup>
             </div>
