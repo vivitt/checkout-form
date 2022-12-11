@@ -21,7 +21,6 @@ import { validCardNumber } from "../validation/validation";
 interface IProps {
   name: string;
   setName: React.Dispatch<React.SetStateAction<string>>;
-
   cardNumber: string;
   setCardNumber: React.Dispatch<React.SetStateAction<string>>;
   expiration: string;
@@ -30,7 +29,6 @@ interface IProps {
   setCvv: React.Dispatch<React.SetStateAction<string>>;
   zipCode: string;
   setZipCode: React.Dispatch<React.SetStateAction<string>>;
-
   setSuccess: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const PaymentCard: React.FC<IProps> = ({
@@ -114,9 +112,10 @@ const PaymentCard: React.FC<IProps> = ({
                   setError("");
                 }}
               />
-              <InputRightElement
-                children={<Icon as={TfiCreditCard} color="#9BADB7" />}
-              />
+              <InputRightElement>
+                {" "}
+                <Icon as={TfiCreditCard} color="#9BADB7" />
+              </InputRightElement>
             </InputGroup>
           </div>
           <div className={styles.group}>
@@ -145,9 +144,9 @@ const PaymentCard: React.FC<IProps> = ({
                     setCvv(event.target.value);
                   }}
                 />
-                <InputRightElement
-                  children={<Icon as={AiFillInfoCircle} color="#9BADB7" />}
-                />
+                <InputRightElement>
+                  <Icon as={AiFillInfoCircle} color="#9BADB7" />/
+                </InputRightElement>
               </InputGroup>
             </div>
           </div>
