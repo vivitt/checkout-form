@@ -1,14 +1,15 @@
 import React from "react";
+
 import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogContent,
-  AlertDialogOverlay,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-import { SelectionRange } from "typescript";
 
 interface IProps {
   success: boolean;
@@ -39,29 +40,27 @@ const SuccesDialog: React.FC<IProps> = ({
     setCvv("");
     setZipCode("");
   };
+
   const cancelRef = React.useRef();
   return (
-    <AlertDialog
-      isOpen={success}
-      leastDestructiveRef={cancelRef}
-      onClose={() => setSuccess(false)}
-    >
-      <AlertDialogOverlay>
-        <AlertDialogContent>
-          <AlertDialogHeader fontSize="lg" fontWeight="bold">
+    <>
+      <Modal isOpen={success} onClose={() => setSuccess(false)}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>
             Thanks for your payment, {name.toUpperCase()} !
-          </AlertDialogHeader>
+          </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>Close this window to continue</ModalBody>
 
-          <AlertDialogBody>Close this window to continue</AlertDialogBody>
-
-          <AlertDialogFooter>
-            <Button ref={cancelRef} onClick={() => closeMessage()}>
+          <ModalFooter>
+            <Button colorScheme="purple" onClick={() => closeMessage()}>
               Close
             </Button>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialogOverlay>
-    </AlertDialog>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 
