@@ -31,8 +31,6 @@ const SuccesDialog: React.FC<IProps> = ({
   setCvv,
   setZipCode,
 }: IProps) => {
-  const cancelRef = React.useRef();
-
   const closeMessage = () => {
     setSuccess(false);
     setName("");
@@ -41,7 +39,7 @@ const SuccesDialog: React.FC<IProps> = ({
     setCvv("");
     setZipCode("");
   };
-
+  const cancelRef = React.useRef();
   return (
     <AlertDialog
       isOpen={success}
@@ -57,7 +55,9 @@ const SuccesDialog: React.FC<IProps> = ({
           <AlertDialogBody>Close this window to continue</AlertDialogBody>
 
           <AlertDialogFooter>
-            <Button onClick={() => closeMessage()}>Close</Button>
+            <Button ref={cancelRef} onClick={() => closeMessage()}>
+              Close
+            </Button>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialogOverlay>
