@@ -66,7 +66,7 @@ const PaymentCard: React.FC<IProps> = ({
 
   return (
     <Card align="center" variant="elevated" bg="white" maxW="sm">
-      <CardHeader align="center">
+      <CardHeader>
         <div className={styles.alert}>
           {error !== "" ? (
             <Alert status="error">
