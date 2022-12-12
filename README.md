@@ -6,7 +6,7 @@ Chackout form created with React, Next.js and Chakra UI
 
 https://checkout-form-lilac.vercel.app/
 
-![App Screenshot](Screenshot001.png)
+<img src="public/Screenshot001.png" alt="App screenshot" width="400"  />
 
 
 ## Features
