@@ -2,9 +2,12 @@
 
   <h1>Talent Squad - Barcelona Digital Talent - III Frontend Challenge</h1>
   <img src="public/Screenshot001.png" alt="App screenshot" width="400"  />
+ 
  <img src="public/Screenshot002.png" alt="App screenshot" width="400"  />
-   <img src="public/Screenshot003.png" alt="App screenshot" width="400"  />
-  <p>Checkout form created with React, Next.js and Chakra UI</p>
+ 
+ <img src="public/Screenshot003.png" alt="App screenshot" width="400"  />
+ 
+ <p>Checkout form created with React, Next.js and Chakra UI</p>
   
   
   [🔗 Checkout form Vercel deployment](https://checkout-form-lilac.vercel.app/)
