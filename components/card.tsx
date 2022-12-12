@@ -16,7 +16,12 @@ import {
   AlertTitle,
   AlertDescription,
 } from "@chakra-ui/react";
-import { validCardNumber } from "../validation/validation";
+import {
+  validCardNumber,
+  validExpiration,
+  validCvv,
+  validZipCode,
+} from "../validation/validation";
 
 interface IProps {
   name: string;
@@ -60,6 +65,12 @@ const PaymentCard: React.FC<IProps> = ({
     } else {
       if (!validCardNumber(cardNumber)) {
         setError("Please enter a valid card number");
+      } else if (!validExpiration(expiration)) {
+        setError("Please enter a valid expiration date");
+      } else if (!validCvv(cvv)) {
+        setError("Please enter a valid CVV");
+      } else if (!validZipCode(zipCode)) {
+        setError("Please enter a valid zip code");
       } else {
         setSuccess(true);
       }
@@ -68,7 +79,7 @@ const PaymentCard: React.FC<IProps> = ({
 
   return (
     <Card align="center" variant="elevated" bg="white" maxW="sm">
-      <CardHeader align="center">
+      <CardHeader>
         <div className={styles.alert}>
           {error !== "" ? (
             <Alert status="error">
@@ -79,13 +90,15 @@ const PaymentCard: React.FC<IProps> = ({
             <></>
           )}
         </div>
-        <Image
-          src="/logo.png"
-          alt="Happy face with a red hat and blue glasses"
-          width={150}
-          height={150}
-        />
-        <Heading size="md">Payment info</Heading>
+        <div className={styles.top}>
+          <Image
+            src="/logo.png"
+            alt="Happy face with a red hat and blue glasses"
+            width={150}
+            height={150}
+          />
+          <Heading size="md">Payment info</Heading>
+        </div>
       </CardHeader>
 
       <CardBody>
