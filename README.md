@@ -22,7 +22,7 @@
 ## Features
 
 - Display error message if a field is empty
-- Validate card number with 
+- Validate card number with the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm)
 - Display error message if card number is not valid
 - Display success dialog if all the inputs are completed and the card number is valid
 
