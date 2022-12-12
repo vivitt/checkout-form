@@ -6,13 +6,13 @@
   
   
   [🔗 Checkout form Vercel deployment](https://checkout-form-lilac.vercel.app/)
-  
-  
-  <img src="public/Screenshot001.png" alt="App screenshot" width="200"  />
  
- <img src="public/Screenshot002.png" alt="App screenshot" width="200"  />
+  
+  <img src="public/Screenshot001.png" alt="App screenshot" width="300"  />
  
- <img src="public/Screenshot003.png" alt="App screenshot" width="200"  />
+ <img src="public/Screenshot002.png" alt="App screenshot" width="300"  />
+ 
+ <img src="public/Screenshot003.png" alt="App screenshot" width="300"  />
  
 
 
