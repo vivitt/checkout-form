@@ -6,7 +6,7 @@
   <p>Checkout form created with React, Next.js and Chakra UI</p>
   
   
-  [🔗 Checkout form](https://checkout-form-lilac.vercel.app/)
+  [🔗 Checkout form Vercel deployment](https://checkout-form-lilac.vercel.app/)
 
 </div>
 ## Features
