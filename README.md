@@ -29,8 +29,6 @@
 
 ## Installation
 
-npm install
-
 ```bash
   cd checkout-form
   npm install
