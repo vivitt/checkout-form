@@ -1,14 +1,14 @@
-
+<div id="header" align="center">
 # Talent Squad - Barcelona Digital Talent - III Frontend Challenge
 
 
-Chackout form created with React, Next.js and Chakra UI
+Checkout form created with React, Next.js and Chakra UI
 
 https://checkout-form-lilac.vercel.app/
 
 <img src="public/Screenshot001.png" alt="App screenshot" width="400"  />
 
-
+</div>
 ## Features
 
 - Display error message if a field is empty
