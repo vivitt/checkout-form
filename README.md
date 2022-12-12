@@ -32,7 +32,7 @@
 npm install
 
 ```bash
-  npm install checkout-form
   cd checkout-form
+  npm install
 ```
     
